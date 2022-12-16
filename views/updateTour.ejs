@@ -1,0 +1,21 @@
+<div class="tour-wrap">
+  <h1>상품수정</h1>
+  <form action="/updateTour" method="post" enctype="multipart/form-data">
+    <input type="hidden" name="setId" value="<%= row.id %>" />
+    <div>
+      <input type="file" name="productImg" value="<%= row.img %>" />
+    </div>
+    <div>
+      <input type="text" name="productName" value="<%= row.productName %>" />
+    </div>
+    <div>
+      <input type="text" name="productPrice" value="<%= row.productPrice %>" />
+    </div>
+    <div>
+      <input type="text" name="productDetail" value="<%= row.productDetail %>" />
+    </div>
+    <div>
+      <input type="submit" value="저장" />
+    </div>
+  </form>
+</div>

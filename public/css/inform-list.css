@@ -1,0 +1,97 @@
+table {
+  padding: 50px 0 30px;
+  margin: 0 auto;
+}
+
+.inform-list td {
+  padding: 20px 30px;
+  cursor: pointer;
+}
+
+.inform-list tr td:nth-child(2) {
+  font-size: 13px;
+  width: 12%;
+}
+
+.inform-list tr td:nth-child(3) {
+  width: 65%;
+}
+
+.inform-list tr td:nth-child(4) {
+  width: 20%;
+}
+
+.inform-list th {
+  padding: 10px 0;
+}
+
+.inform-list .padding-wrap {
+  padding: 350px 0 200px;
+}
+
+.inform-list h1 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.table-title {
+  padding-bottom: 30px;
+  background-color: #1c4d9a;
+  color: #fff;
+}
+
+.inform-list .inform-number {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.inform-list .inform-number a {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 2px 7px;
+}
+
+.inform-list .inform-number a:first-child {
+  background-color: #1c4d9a;
+  color: #fff;
+}
+
+.inform-list .bt-wrap {
+  margin-left: 90px;
+  width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+  .inform-list h1 {
+    font-size: 55px;
+  }
+  .inform-list td {
+    font-size: 14px;
+  }
+
+  .inform-list .padding-wrap {
+    padding: 150px 0 50px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .inform-list h1 {
+    font-size: 50px;
+  }
+
+  .inform-list td {
+    font-size: 14px;
+    padding: 15px 25px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .inform-list h1 {
+    font-size: 40px;
+  }
+
+  .inform-list td {
+    font-size: 13px;
+    padding: 10px 15px;
+  }
+}

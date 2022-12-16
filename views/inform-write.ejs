@@ -1,0 +1,22 @@
+<form action="/write" method="post">
+  <div class="write-wrap">
+    <h1 class="title font-600">게시글 작성</h1>
+    <div class="write-contents__wrap">
+      <div class="board-write">
+        <div class="write-title">
+          <textarea name="title" id="summernote" class="board-write__textarea" placeholder="제목을 입력해 주세요."></textarea>
+          <input type="text" placeholder="작성자" name="author" />
+          <input type="text" placeholder="날짜 ex) 2022-11-23" />
+        </div>
+        <div class="cont">
+          <textarea name="content" placeholder="내용 입력"></textarea>
+        </div>
+      </div>
+      <div class="bt-wrap">
+        <input type="submit" value="작성" />
+        <a href="/inform">취소</a>
+        <a href="/inform">삭제</a>
+      </div>
+    </div>
+  </div>
+</form>

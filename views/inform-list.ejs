@@ -1,0 +1,52 @@
+<section class="inform-list">
+  <div class="write-wrap">
+    <h1 class="title font-600">공지사항</h1>
+    <table>
+      <tr class="table-title">
+        <th>번호</th>
+        <th>작성자</th>
+        <th>제목</th>
+        <th>게시일</th>
+        <th>조회수</th>
+        <th>수정</th>
+        <th>삭제</th>
+      </tr>
+      <% rows.forEach((row,index) => { %>
+      <tr>
+        <td>
+          <div><a href="/content?id=<%= row.id %> "><%= row.id %></a></div>
+        </td>
+        <td>
+          <div><a href="/content?id=<%= row.id %> "><%= row.author %></a></div>
+        </td>
+        <td>
+          <div><a href="/content?id=<%= row.id %> "><%= row.title %></a></div>
+        </td>
+        <td>
+          <div><a href="/content?id=<%= row.id %> "><%= row.create_time %></a></div>
+        </td>
+        <td>
+          <div><a href="/content?id=<%= row.id %> "><%= row.num %></a></div>
+        </td>
+        <td><input type="button" value="수정" onclick="javascript:location.href='/fix?id=<%= row.id %>'" /></td>
+        <td><input type="button" value="삭제" onclick="javascript:location.href='/deleteMemo?id=<%= row.id %>'" /></td>
+      </tr>
+      <% }) %>
+    </table>
+    <div class="bt-wrap">
+      <a href="/write">작성</a>
+    </div>
+    <div class="inform-number">
+      <a href="">1</a>
+      <a href="">2</a>
+      <a href="">3</a>
+      <a href="">4</a>
+      <a href="">5</a>
+    </div>
+    <!-- <div class="bt-wrap">
+      <a href="/inform">수정</a>
+      <a href="/inform">취소</a>
+      <a href="/inform">삭제</a>
+    </div> -->
+  </div>
+</section>

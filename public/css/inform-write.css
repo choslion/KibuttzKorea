@@ -1,0 +1,88 @@
+.write-wrap {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 300px 0;
+}
+
+.write-title {
+  margin-bottom: 10px;
+}
+
+.write-title input::placeholder {
+  color: rgb(122, 122, 122);
+}
+
+.board-write__textarea {
+  display: block;
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ebecef;
+  box-sizing: border-box;
+  overflow: hidden;
+  resize: none;
+  word-break: break-all;
+  font-size: 15px;
+  outline: none;
+  margin: 0 auto 10px;
+}
+
+.write-wrap .title {
+  font-size: 40px;
+}
+
+.write-wrap input {
+  border: 1px solid black;
+  border-radius: 0;
+}
+
+.write-wrap dl {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+
+.write-wrap dt {
+  margin-right: 200px;
+}
+
+.cont {
+  width: 100%;
+}
+
+.cont textarea {
+  display: block;
+  width: 100%;
+  height: 300px;
+  padding: 15px;
+  box-sizing: border-box;
+  resize: none;
+  margin: 0 auto;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.bt-wrap {
+  padding-top: 30px;
+}
+
+.bt-wrap a {
+  padding: 10px 20px;
+  border: 1px solid black;
+  box-sizing: border-box;
+}
+
+.bt-wrap a:first-child {
+  background-color: #1c4d9a;
+  color: white;
+  border: none;
+}
+
+.bt-wrap > input {
+  width: 7%;
+  padding: 13px 0;
+}
+
+@media screen and (max-width: 1200px) {
+  .write-wrap {
+    padding: 150px 0 100px;
+  }
+}

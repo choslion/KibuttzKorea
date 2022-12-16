@@ -1,0 +1,175 @@
+footer {
+  position: relative;
+  background-color: #1c4d9a;
+  width: 100%;
+  padding: 150px 0;
+  color: #fff;
+}
+
+.footer-info {
+  width: 33.3333%;
+}
+
+.footer-info__address {
+  font-style: normal;
+  padding: 0 0 117px;
+}
+
+.adress-item {
+  display: flex;
+}
+
+.footer-wrap .title {
+  color: #99afd2;
+  margin-right: 30px;
+  font-size: 18px;
+  width: 62px;
+}
+
+.footer-wrap .text {
+  font-size: 18px;
+}
+
+.footer-rule {
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.footer-rule__cookie {
+  margin-right: 20px;
+}
+
+.footer-reserve {
+  color: #99afd2;
+  font-size: 16px;
+}
+
+.footer-family {
+  width: 16.6667%;
+}
+
+.family-wrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.family-title {
+  color: #99afd2;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.family-link {
+  padding: 10px 0;
+}
+
+.family-link a {
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+}
+
+.family-link i {
+  margin-left: 10px;
+}
+
+.sns {
+  display: flex;
+}
+
+.sns i {
+  padding: 0 20px;
+}
+
+.sns i:first-child {
+  padding: 0 20px 0 0;
+}
+
+.footer-nav {
+  width: 16.6667%;
+  margin-left: auto !important;
+}
+
+.footer-menu__list p {
+  font-size: 24px;
+  color: #99afd2;
+}
+
+.footer-menu__list:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+footer .block {
+  display: block;
+}
+
+footer .none {
+  display: none;
+}
+
+@media screen and (max-width: 1600px) {
+  .footer-info {
+    width: 41.6667%;
+  }
+
+  .footer-family {
+    width: 25%;
+  }
+
+  .footer-nav {
+    width: 25%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1000px) {
+  .footer-info {
+    width: 100%;
+  }
+
+  .footer-info__address {
+    padding: 55px 0;
+  }
+
+  .sns {
+    padding-bottom: 25px;
+  }
+
+  footer .block {
+    display: none;
+  }
+
+  footer .none {
+    display: block;
+  }
+
+  .footer-wrap .title {
+    width: 50px;
+    margin-right: 10px;
+    font-size: 15px;
+  }
+
+  .footer-wrap .text {
+    font-size: 15px;
+  }
+
+  .footer-rule {
+    font-size: 15px;
+  }
+
+  .footer-reserve {
+    color: #99afd2;
+    font-size: 15px;
+  }
+
+  .family-title {
+    color: #99afd2;
+    font-size: 15px;
+  }
+
+  .footer-menu__list p {
+    font-size: 25px;
+  }
+}

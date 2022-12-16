@@ -1,0 +1,34 @@
+<section class="inform-content">
+  <div class="padding-wrap">
+    <h1 class="title font-600">공지사항</h1>
+    <div class="inform-restart">
+      <h1 class="restart-title"><%= row.title %></h1>
+      <div class="inform-restart__info">
+        <div class="inform-restart__left">
+          <div class="left-num">
+            <span>번호</span>
+            <span><%= row.id %> </span>
+          </div>
+          <div class="left-date">
+            <span>작성일</span>
+            <span><%= row.create_time %> </span>
+          </div>
+        </div>
+        <div class="inform-restart__right">
+          <div class="right-author">
+            <span>글쓴이</span>
+            <span><%= row.author %></span>
+          </div>
+          <div class="right-read">
+            <span>조회</span>
+            <span><%= row.num %> </span>
+          </div>
+        </div>
+      </div>
+      <div class="inform-restart__content"><pre><%= row.content %></pre></div>
+    </div>
+    <div class="bt-wrap">
+      <a href="/inform">목록</a>
+    </div>
+  </div>
+</section>

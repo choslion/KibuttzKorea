@@ -1,0 +1,171 @@
+.section4 {
+  padding: 100px 0 100px 0;
+}
+
+.section4 .width50:first-child {
+  width: 42.6667%;
+  position: relative;
+}
+
+.section4 .width50:last-child {
+  width: 57.3333%;
+}
+
+.bg-wrap {
+  position: relative;
+}
+
+.bg {
+  background-image: url(../img/sec4-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  padding-top: 500px;
+}
+
+.section4 .flex-row {
+  display: flex;
+}
+
+.kibuttz-list {
+  padding-bottom: 160px;
+}
+
+.kibuttz-list .title {
+  font-size: 26px;
+}
+.kibuttz-list .desc {
+  font-size: 20px;
+}
+
+.section4 .img-wrap {
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  max-width: 50%;
+  display: block;
+  padding-bottom: 200px;
+}
+
+.section4 .img-wrap:nth-child(3) {
+  position: absolute;
+  right: 80px;
+  bottom: 400px;
+  width: calc(25% - 16px);
+}
+
+.img-wrap .inner {
+  width: 80%;
+}
+
+.inner img {
+  margin-bottom: 40px;
+}
+
+.img-wrap .title {
+  font-size: 26px;
+  text-shadow: 1px 1px 1px rgb(39, 38, 38);
+}
+.img-wrap .desc {
+  font-size: 20px;
+  text-shadow: 1px 1px 1px rgb(39, 38, 38);
+}
+
+@media screen and (max-width: 1600px) {
+}
+@media screen and (max-width: 1280px) {
+  .section4 .text-wrap .title {
+    font-size: 40px;
+  }
+
+  .img-wrap .title {
+    font-size: 21px;
+  }
+  .img-wrap .desc {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 1000px) {
+  .section4 {
+    padding: 0;
+  }
+
+  .bg {
+    padding-top: 100px;
+  }
+
+  .section4 .flex-row {
+    display: block;
+  }
+
+  .section4 .text-wrap .title {
+    font-size: 30px;
+  }
+
+  .section4 .text-wrap .desc {
+    font-size: 16px;
+  }
+
+  .section4 .text-wrap .view-more {
+    font-size: 14px;
+  }
+
+  .section4 .width50:first-child {
+    width: 100%;
+  }
+
+  .section4 .width50:last-child {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .kibuttz-list {
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 1px solid gray;
+  }
+
+  .kibuttz-list .title {
+    font-size: 20px;
+  }
+  .kibuttz-list .desc {
+    font-size: 16px;
+  }
+
+  .img-wrap .title {
+    font-size: 20px;
+  }
+  .img-wrap .desc {
+    font-size: 16px;
+  }
+
+  .section4 .img-wrap {
+    max-width: 90%;
+    padding-bottom: 50px;
+  }
+
+  .img-wrap .inner {
+    width: 100%;
+  }
+
+  .section4 .img-wrap:nth-child(3) {
+    position: relative;
+    right: 0px;
+    bottom: 0px;
+    width: 100%;
+  }
+
+  .section4 .res-menu {
+    display: block;
+  }
+
+  .section4 .block {
+    display: none;
+  }
+}

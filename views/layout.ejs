@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>키부츠코리아</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/menu-slide.js"></script>
+    <script src="js/change.js"></script>
+    <script src="js/past-scroll.js"></script>
+  </head>
+
+  <body>
+    <div id="header">
+      <%- include('header') %> <% if(darkMode==true){ %>
+      <script>
+        changeBlack();
+      </script>
+      <% } else if (darkMode==false) { %>
+      <script>
+        changeWhite();
+      </script>
+      <% } %>
+    </div>
+    <main><%- include('myNav') %> <%- body %></main>
+    <div id="footer"><%- include('footer') %></div>
+    <script src="https://kit.fontawesome.com/1af51f8c7f.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/header-scroll.js"></script>
+    <script src="js/inAndOut.js"></script>
+  </body>
+</html>

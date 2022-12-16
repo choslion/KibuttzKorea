@@ -1,0 +1,54 @@
+@import url(reset.css);
+
+/* color */
+
+/* header */
+@import url(header.css);
+@import url(menu-slide.css);
+
+/* container */
+@import url(section1.css);
+@import url(section2.css);
+@import url(section3.css);
+@import url(section4.css);
+@import url(section5.css);
+@import url(section6.css);
+@import url(section7.css);
+
+/* footer */
+@import url(footer.css);
+/* join */
+@import url(join.css);
+
+/* sub pages */
+@import url(pastFuture.css);
+@import url(login.css);
+@import url(tourThumnail.css);
+
+/* end sub pages */
+
+/* inform pages */
+@import url(inform-list.css);
+@import url(inform-write.css);
+@import url(inform-content.css);
+
+:root {
+  --text-dark: rgb(39, 37, 37);
+}
+
+.res-menu {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.font700 {
+  font-weight: 700;
+}

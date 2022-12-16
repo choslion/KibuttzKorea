@@ -1,0 +1,39 @@
+.section7-wrap {
+  padding: 70px 0;
+  position: relative;
+}
+
+.section7-bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 76.29769vw;
+  height: 15.00938vw;
+  background-image: url(../img/footer-logo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -2;
+}
+
+.section7 .title {
+  font-weight: 300;
+  color: #1c4d9a;
+}
+
+@media screen and (max-width: 1600px) {
+  .section7 .title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section7 .title {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .section7 {
+    display: none;
+  }
+}

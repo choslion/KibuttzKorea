@@ -1,0 +1,26 @@
+<section class="tour">
+  <div class="tour-banner">
+    <!-- <img src="img/bg3.JPG" alt="투어배너" /> -->
+  </div>
+  <div class="area">
+    <h1 class="title font-600">다양한 여행상품들을 만나보세요!</h1>
+    <div class="tour-wrap">
+      <% rows.forEach((row,index) => { %>
+      <div class="tour-list">
+        <figure>
+          <img src="<%= row.img %>" alt="상품" />
+          <figcaption>
+            <h4><%= row.productName %></h4>
+            <p><%= row.productPrice %></p>
+            <p><%= row.productDetail %></p>
+          </figcaption>
+          <div class="modify">
+            <input type="submit" value="수정" onclick="javascript:location.href='/updateTour?id=<%= row.id %>'" />
+            <input type="submit" value="삭제" onclick="javascript:location.href='/deleteProduct?id=<%= row.id %>'" />
+          </div>
+        </figure>
+      </div>
+      <% }) %>
+    </div>
+  </div>
+</section>

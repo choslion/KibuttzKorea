@@ -1,0 +1,83 @@
+.tour .title {
+  padding-top: 50px;
+  text-align: center;
+  color: #1c4d9a;
+}
+
+.tour-wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 100px;
+}
+.tour-banner {
+  width: 100%;
+  padding-top: 50%;
+  background-image: url(../img/bg3.JPG);
+  background-position: center center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  overflow: hidden;
+}
+
+.tour-banner img {
+  width: 100%;
+  height: auto;
+}
+
+.tour-wrap input {
+  border: 1px solid;
+}
+
+figure {
+  width: 100%;
+  height: auto;
+  transition: all 1s ease-in-out;
+}
+
+.tour-list {
+  transition: all 1s ease-in-out;
+}
+
+.tour-list img {
+  width: 350px;
+  height: 350px;
+  display: block;
+  object-fit: cover;
+  transition: all 1s ease-in-out;
+  /* height: 400px; */
+}
+
+.tour-list h4 {
+  padding: 15px 0;
+}
+
+.tour-list p:last-child {
+  padding-top: 15px;
+  opacity: 0.6;
+}
+
+.modify {
+  padding-top: 15px;
+}
+
+@media screen and (max-width: 1200px) {
+  .tour-banner {
+    padding-top: 85%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .tour-wrap {
+    justify-content: center;
+  }
+
+  .tour-banner {
+    padding-top: 90%;
+  }
+
+  .tour-list img {
+    width: 300px;
+    height: 300px;
+  }
+}
