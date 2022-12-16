@@ -5,6 +5,7 @@ var connection = mysql.createConnection({
   password: '238e16b6',
   database: 'heroku_bf64d6620b7deec',
   dateStrings: 'date',
+  multipleStatements: true, // db 다중처리용 설정
 });
 
 // const date = new Date();
