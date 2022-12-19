@@ -8,8 +8,6 @@
         <th>제목</th>
         <th>게시일</th>
         <th>조회수</th>
-        <th>수정</th>
-        <th>삭제</th>
       </tr>
       <% rows.forEach((row,index) => { %>
       <tr>
@@ -28,8 +26,6 @@
         <td>
           <div><a href="/content?id=<%= row.id %> "><%= row.num %></a></div>
         </td>
-        <td><input type="button" value="수정" onclick="javascript:location.href='/fix?id=<%= row.id %>'" /></td>
-        <td><input type="button" value="삭제" onclick="javascript:location.href='/deleteMemo?id=<%= row.id %>'" /></td>
       </tr>
       <% }) %>
     </table>

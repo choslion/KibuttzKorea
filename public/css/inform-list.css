@@ -10,11 +10,11 @@ table {
 
 .inform-list tr td:nth-child(2) {
   font-size: 13px;
-  width: 12%;
+  width: 15%;
 }
 
 .inform-list tr td:nth-child(3) {
-  width: 65%;
+  width: 66%;
 }
 
 .inform-list tr td:nth-child(4) {
@@ -56,7 +56,6 @@ table {
 }
 
 .inform-list .bt-wrap {
-  margin-left: 90px;
   width: 50%;
 }
 

@@ -51,18 +51,18 @@ input:focus {
   border-bottom: 3px solid rgb(101, 101, 235);
 }
 
-table {
+/* table {
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .submit {
   text-align: center;
   padding: 20px;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-color: #1c4d9a;
   color: #fff;
   cursor: pointer;

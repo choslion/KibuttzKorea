@@ -29,6 +29,8 @@
     </div>
     <div class="bt-wrap">
       <a href="/inform">목록</a>
+      <input type="button" value="수정" onclick="javascript:location.href='/fix?id=<%= row.id %>'" />
+      <input type="button" value="삭제" onclick="javascript:location.href='/deleteMemo?id=<%= row.id %>'" />
     </div>
   </div>
 </section>
