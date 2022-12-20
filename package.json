@@ -14,11 +14,12 @@
   },
   "name": "node",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "app.js",
   "directories": {
     "test": "test"
   },
   "scripts": {
+    "start": "node bin/www",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
