@@ -5,6 +5,7 @@ var connection = mysql.createConnection({
   password: 'cw2688hw',
   database: 'kibuttz',
   dateStrings: 'date',
+  multipleStatements: true,
 });
 
 // const date = new Date();
@@ -21,6 +22,10 @@ function insertLogin(userId, userPw, callback) {
     callback();
   });
 }
+// 먼저 선언한 쿼리문 다음 세미콜론 하고 뒤에 + 'SELECT * FROM tablename.... ' 으로 다른쿼리를 붙일 수 있다.
+//  let rows0 = rows[0];
+//  let rows1 = rows[1];
+// callback(rows0,rows1); 이렇게 보내주면 된다.
 
 function checkLogin(userId, userPw, callback) {
   connection.query(`SELECT * FROM jointable WHERE userId = '${userId}' and userPw = '${userPw}'`, (err, results) => {
