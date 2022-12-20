@@ -1,11 +1,10 @@
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host: 'us-cdbr-east-06.cleardb.net',
-  user: 'bd72d570a3d90f',
-  password: '238e16b6',
-  database: 'heroku_bf64d6620b7deec',
+  host: 'localhost',
+  user: 'root',
+  password: '1234',
+  database: 'kibuttz',
   dateStrings: 'date',
-  multipleStatements: true, // db 다중처리용 설정
 });
 
 // const date = new Date();

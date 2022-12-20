@@ -9,5 +9,6 @@ let port = process.env.PORT || 3005;
 //  실행파일
 
 //
-// 헤로쿠용
-app.listen(process.env.PORT || port);
+app.listen(port, () => {
+  console.log(`${port} 로 express 실행`);
+});
