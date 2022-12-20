@@ -1,8 +1,8 @@
 var mysql = require('mysql');
 var connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'database-1.cq7pcagcikgl.us-east-1.rds.amazonaws.com',
   user: 'root',
-  password: '1234',
+  password: 'cw2688hw',
   database: 'kibuttz',
   dateStrings: 'date',
 });
@@ -16,14 +16,14 @@ connection.connect(function (err) {
 });
 
 function insertLogin(userId, userPw, callback) {
-  connection.query(`INSERT INTO loginTable(create_time,userId,userPw) VALUES (NOW(),'${userId}' ,'${userPw}')`, (err) => {
+  connection.query(`INSERT INTO logintable(create_time,userId,userPw) VALUES (NOW(),'${userId}' ,'${userPw}')`, (err) => {
     if (err) throw err;
     callback();
   });
 }
 
 function checkLogin(userId, userPw, callback) {
-  connection.query(`SELECT * FROM joinTable WHERE userId = '${userId}' and userPw = '${userPw}'`, (err, results) => {
+  connection.query(`SELECT * FROM jointable WHERE userId = '${userId}' and userPw = '${userPw}'`, (err, results) => {
     if (err) throw err;
     callback(results);
   });
@@ -31,7 +31,7 @@ function checkLogin(userId, userPw, callback) {
 
 function insertJoin(userName, userId, userPw, userPwC, birth, address, callback) {
   connection.query(
-    `INSERT INTO joinTable(create_time,userName,userId,userPw,userPwC,birth,address) VALUES (NOW(),'${userName}','${userId}' ,'${userPw}','${userPwC}','${birth}','${address}')`,
+    `INSERT INTO jointable(create_time,userName,userId,userPw,userPwC,birth,address) VALUES (NOW(),'${userName}','${userId}' ,'${userPw}','${userPwC}','${birth}','${address}')`,
     (err) => {
       if (err) throw err;
       callback();
@@ -47,14 +47,14 @@ function changeDate(callback) {
 }
 
 function getMemo(callback) {
-  connection.query('SELECT * FROM kibuttzTable ORDER BY id DESC', (err, rows, fields) => {
+  connection.query('SELECT * FROM kibuttztable ORDER BY id DESC', (err, rows, fields) => {
     if (err) throw err;
     callback(rows);
   });
 }
 // 작성페이지에서 작성할때 데이터베이스에 정보가 들어가게해주는 함수
 function insertMemo(title, author, content, callback) {
-  connection.query(`INSERT INTO kibuttzTable(title,author,create_time,content,num) VALUES ('${title}','${author}',NOW(),'${content}' , 0)`, (err) => {
+  connection.query(`INSERT INTO kibuttztable(title,author,create_time,content,num) VALUES ('${title}','${author}',NOW(),'${content}' , 0)`, (err) => {
     if (err) throw err;
     callback();
   });
@@ -62,7 +62,7 @@ function insertMemo(title, author, content, callback) {
 
 // 수정페이지 안에있는 수정버튼을 눌렀을때 업데이트가 되게하는 함수.
 function updateMemos(setId, title, author, content, callback) {
-  connection.query(`UPDATE kibuttzTable SET title= '${title}', author= '${author}' , create_time = NOW(), content= '${content}' WHERE id = ${setId}`, (err) => {
+  connection.query(`UPDATE kibuttztable SET title= '${title}', author= '${author}' , create_time = NOW(), content= '${content}' WHERE id = ${setId}`, (err) => {
     if (err) throw err;
     callback();
   });
@@ -70,7 +70,7 @@ function updateMemos(setId, title, author, content, callback) {
 
 // 메모중에 id 가 일치하는 데이터만 추출 공지를 선택할때 쓰는함수
 function getMemoById(id, callback) {
-  connection.query(`SELECT * FROM kibuttzTable WHERE id = ${id}`, (err, row) => {
+  connection.query(`SELECT * FROM kibuttztable WHERE id = ${id}`, (err, row) => {
     if (err) throw err;
     callback(row);
   });
@@ -78,14 +78,14 @@ function getMemoById(id, callback) {
 
 // 공지사항 삭제버튼 누를때 쓰는함수
 function deleteById(id, callback) {
-  connection.query(`DELETE FROM kibuttzTable WHERE id = ${id}`, (err) => {
+  connection.query(`DELETE FROM kibuttztable WHERE id = ${id}`, (err) => {
     if (err) throw err;
     callback();
   });
 }
 
 function countNum(id, callback) {
-  connection.query(`UPDATE kibuttzTable SET num = num+1 WHERE id = ${id}`, (err, row) => {
+  connection.query(`UPDATE kibuttztable SET num = num+1 WHERE id = ${id}`, (err, row) => {
     if (err) throw err;
     callback();
   });
