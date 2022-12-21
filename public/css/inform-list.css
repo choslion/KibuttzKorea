@@ -4,13 +4,13 @@ table {
 }
 
 .inform-list td {
-  padding: 20px 30px;
   cursor: pointer;
 }
 
 .inform-list tr td:nth-child(2) {
   font-size: 13px;
   width: 15%;
+  padding: 0;
 }
 
 .inform-list tr td:nth-child(3) {
@@ -19,6 +19,7 @@ table {
 
 .inform-list tr td:nth-child(4) {
   width: 20%;
+  padding: 0;
 }
 
 .inform-list th {
@@ -77,6 +78,9 @@ table {
     font-size: 50px;
   }
 
+  .inform-list td {
+    padding: 15px 25px;
+  }
   .inform-list td {
     font-size: 14px;
     padding: 15px 25px;
