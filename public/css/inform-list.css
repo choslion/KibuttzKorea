@@ -1,44 +1,50 @@
-table {
-  padding: 50px 0 30px;
-  margin: 0 auto;
+.inform-wrap {
+  padding: 200px 0;
 }
 
-.inform-list td {
-  cursor: pointer;
+.inform-head {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 2px solid #222;
+  border-bottom: 1px solid #ddd;
+  height: 91px;
 }
 
-.inform-list tr td:nth-child(2) {
-  font-size: 13px;
-  width: 15%;
-  padding: 0;
+.inform-head__list {
+  text-align: center;
+  color: #222222;
+  font-size: 18px;
 }
 
-.inform-list tr td:nth-child(3) {
-  width: 66%;
-}
-
-.inform-list tr td:nth-child(4) {
-  width: 20%;
-  padding: 0;
-}
-
-.inform-list th {
-  padding: 10px 0;
-}
-
-.inform-list .padding-wrap {
-  padding: 350px 0 200px;
-}
-
-.inform-list h1 {
-  margin-top: 20px;
+.inform-body {
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  height: 101px;
   text-align: center;
 }
 
-.table-title {
-  padding-bottom: 30px;
-  background-color: #1c4d9a;
-  color: #fff;
+.inform-body a {
+  display: block;
+  display: flex;
+  width: 100%;
+}
+
+.inform-body__list:nth-child(2) {
+  text-align: left;
+}
+
+.w10 {
+  width: 10%;
+}
+
+.w55 {
+  width: 55%;
+}
+
+.w15 {
+  width: 15%;
 }
 
 .inform-list .inform-number {
@@ -61,40 +67,10 @@ table {
 }
 
 @media screen and (max-width: 1200px) {
-  .inform-list h1 {
-    font-size: 55px;
-  }
-  .inform-list td {
-    font-size: 14px;
-  }
-
-  .inform-list .padding-wrap {
-    padding: 150px 0 50px;
-  }
 }
 
 @media screen and (max-width: 1000px) {
-  .inform-list h1 {
-    font-size: 50px;
-  }
-
-  .inform-list td {
-    padding: 15px 25px;
-  }
-  .inform-list td {
-    font-size: 14px;
-    padding: 15px 25px;
-    cursor: pointer;
-  }
 }
 
 @media screen and (max-width: 768px) {
-  .inform-list h1 {
-    font-size: 40px;
-  }
-
-  .inform-list td {
-    font-size: 13px;
-    padding: 10px 15px;
-  }
 }

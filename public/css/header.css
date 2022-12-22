@@ -114,11 +114,6 @@ header {
   /* transition: all 0.4s ease-in-out; */
 }
 
-/* .sub-nav__list a:hover {
-  background-color: rgb(167, 167, 167);
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);
-} */
-
 .language-wrap {
   display: flex;
   justify-content: space-between;

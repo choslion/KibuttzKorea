@@ -7,7 +7,7 @@ function changeBlack() {
   darkNav.forEach((item) => (item.style.color = 'black'));
   darkBorder.forEach((item) => (item.style.borderLeft = 'black'));
   darkBorder.forEach((item) => (item.style.borderRight = 'black'));
-  pcNavBg.style.backgroundColor = 'rgba(255,255,255,0.8)';
+  pcNavBg.style.backgroundColor = 'rgba(255,255,255,0.9)';
 }
 
 function changeWhite() {

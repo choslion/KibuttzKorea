@@ -1,35 +1,27 @@
 <section class="inform-list">
-  <div class="write-wrap">
-    <h1 class="title font-600">공지사항</h1>
-    <table>
-      <tr class="table-title">
-        <th>번호</th>
-        <th>작성자</th>
-        <th>제목</th>
-        <th>게시일</th>
-        <th>조회수</th>
-      </tr>
+  <div class="inform-wrap">
+    <div class="area">
+      <h1 class="title font-600">공지사항&뉴스</h1>
+      <ul class="inform-head">
+        <li class="inform-head__list w10">번호</li>
+        <li class="inform-head__list w55">제목</li>
+        <li class="inform-head__list w10">작성자</li>
+        <li class="inform-head__list w15">작성날짜</li>
+        <li class="inform-head__list w10">조회수</li>
+      </ul>
       <% rows.forEach((row,index) => { %>
-      <tr>
-        <td>
-          <div><a href="/content?id=<%= row.id %> "><%= row.id %></a></div>
-        </td>
-        <td>
-          <div><a href="/content?id=<%= row.id %> "><%= row.author %></a></div>
-        </td>
-        <td>
-          <div><a href="/content?id=<%= row.id %> "><%= row.title %></a></div>
-        </td>
-        <td>
-          <div><a href="/content?id=<%= row.id %> "><%= row.create_time %></a></div>
-        </td>
-        <td>
-          <div><a href="/content?id=<%= row.id %> "><%= row.num %></a></div>
-        </td>
-      </tr>
+      <ul class="inform-body">
+        <a href="/content?id=<%= row.id %> ">
+          <li class="inform-body__list w10"><%= row.id %></li>
+          <li class="inform-body__list w55"><%= row.title %></li>
+          <li class="inform-body__list w10"><%= row.author %></li>
+          <li class="inform-body__list w15"><%= row.create_time %></li>
+          <li class="inform-body__list w10"><%= row.num %></li>
+        </a>
+      </ul>
       <% }) %>
-    </table>
-    <div class="bt-wrap">
+
+      <!-- <div class="bt-wrap">
       <a href="/write">작성</a>
     </div>
     <div class="inform-number">
@@ -38,11 +30,12 @@
       <a href="">3</a>
       <a href="">4</a>
       <a href="">5</a>
-    </div>
-    <!-- <div class="bt-wrap">
+    </div> -->
+      <!-- <div class="bt-wrap">
       <a href="/inform">수정</a>
       <a href="/inform">취소</a>
       <a href="/inform">삭제</a>
     </div> -->
+    </div>
   </div>
 </section>
