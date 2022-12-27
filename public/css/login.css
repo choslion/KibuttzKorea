@@ -48,28 +48,46 @@
 #login-form > input::placeholder {
   color: #d2d2d2;
 }
-#login-form > input[type="submit"] {
+#login-form > input[type='submit'] {
   color: #fff;
   font-size: 16px;
   background-color: #1c4d9a;
   margin-top: 20px;
 }
 
-#login-form > input[type="checkbox"] {
+#login-form > input[type='checkbox'] {
   display: none;
 }
 #login-form > label {
   color: #999999;
 }
-#login-form input[type="checkbox"] + label {
+#login-form input[type='checkbox'] + label {
   cursor: pointer;
   padding-left: 26px;
-  background-image: url("checkbox.png");
+  background-image: url('checkbox.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
-#login-form input[type="checkbox"]:checked + label {
-  background-image: url("checkbox-active.png");
+#login-form input[type='checkbox']:checked + label {
+  background-image: url('checkbox-active.png');
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+@media screen and (max-width: 500px) {
+  .login-wrapper {
+    width: 300px;
+    padding: 150px 0px;
+    margin: 0 auto;
+  }
+
+  .search-info {
+    font-size: 11px;
+    padding: 5px;
+  }
+
+  .join-us {
+    font-size: 11px;
+    padding: 5px;
+  }
 }

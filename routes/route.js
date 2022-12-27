@@ -177,7 +177,7 @@ router.get('/deleteProduct', (req, res) => {
 try {
   fs.readFileSync('public/uploads/', { encoding: 'utf8', flag: 'r' });
 } catch (err) {
-  console.log('폴더가 존재하지 않습니다.');
+  // console.log('폴더가 존재하지 않습니다.');
   if (!fs.existsSync('public/uploads')) fs.mkdirSync('public/uploads');
 }
 
