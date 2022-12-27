@@ -34,9 +34,9 @@ function checkLogin(userId, userPw, callback) {
   });
 }
 
-function insertJoin(userName, userId, userPw, userPwC, birth, address, callback) {
+function insertJoin(userName, userId, userPw, userPwC, userMail, userNumber, callback) {
   connection.query(
-    `INSERT INTO jointable(create_time,userName,userId,userPw,userPwC,birth,address) VALUES (NOW(),'${userName}','${userId}' ,'${userPw}','${userPwC}','${birth}','${address}')`,
+    `INSERT INTO jointable(create_time,userName,userId,userPw,userPwC,userMail,userNumber) VALUES (NOW(),'${userName}','${userId}' ,'${userPw}','${userPwC}','${userMail}','${userNumber}')`,
     (err) => {
       if (err) throw err;
       callback();

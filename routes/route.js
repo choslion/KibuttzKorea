@@ -115,9 +115,9 @@ router.post('/joinUs', (req, res) => {
   let userId = param['userId'];
   let userPw = param['userPw'];
   let userPwC = param['userPwC'];
-  let birth = param['birth'];
-  let address = param['address'];
-  db.insertJoin(userName, userId, userPw, userPwC, birth, address, () => {
+  let userMail = param['userMail'];
+  let userNumber = param['userNumber'];
+  db.insertJoin(userName, userId, userPw, userPwC, userMail, userNumber, () => {
     res.redirect('/login');
   });
 });

@@ -1,4 +1,4 @@
-.form-wrap {
+/* .form-wrap {
   padding: 350px 0;
 }
 
@@ -40,7 +40,7 @@ input {
   border-radius: 10px;
   transition: all 0.2s ease-in-out;
   padding: 5px;
-}
+} */
 
 input::placeholder {
   color: rgb(125, 125, 177);
@@ -69,7 +69,7 @@ input[type='submit'] {
   padding: 10px;
 }
 
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   .form-wrap {
     padding: 150px 0;
   }
@@ -91,5 +91,576 @@ input[type='submit'] {
   label {
     font-size: 13px;
     padding: 10px;
+  }
+} */
+/* ////////////////////////////////////////// */
+
+.red_txt {
+  color: #ee7272;
+}
+
+.joinPage__wrap {
+  position: relative;
+  max-width: 628px;
+  margin: 0 auto;
+}
+
+.joinPage__container {
+  width: 100%;
+}
+
+.sub_tit_txt {
+  padding-bottom: 15px;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.p200 {
+  padding: 200px 0 200px;
+  box-sizing: border-box;
+}
+
+.con_term .term_txt {
+  overflow-y: auto;
+  height: 210px;
+  margin: 0 0 15px;
+  padding: 30px;
+  border: 1px solid #ececec;
+}
+
+.con_term .term_txt ul li,
+.con_term .term_txt p,
+.con_term .term_txt div {
+  margin: 0 0 15px;
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.left_margin {
+  margin: 0 0 0 20px;
+}
+
+.con_term .term_txt div.txt_bold {
+  margin: 0 0 25px;
+  font-weight: bold;
+}
+
+.joinComfirm_Btn {
+  display: block;
+  width: 300px;
+  height: 60px;
+  margin: 0 auto;
+  padding: 10px;
+  border: none;
+  background-color: #cbc6ad;
+  line-height: 45px;
+  text-align: center;
+  transition: all 0.3s;
+}
+.joinComfirm_Btn:hover {
+  background-color: #a9a27d;
+  color: #fff;
+}
+
+.btn_wrap a.wide {
+  width: 587px;
+  margin: 0 0 0 20px;
+}
+
+.find_txt ul li {
+  margin: 0 0 20px;
+  font-size: 13px;
+  color: #9a9a9a;
+  line-height: 17px;
+  text-align: center;
+}
+
+.form_txtInput .checkbox_wrap {
+  position: relative;
+  padding: 5px;
+  text-align: right;
+}
+
+.form_txtInput .checkbox_wrap input[type='checkbox'] {
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+}
+
+.form_txtInput .checkbox_wrap input[type='checkbox'] + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 20px;
+  font-size: 13px;
+  color: rgba(51, 51, 51, 0.7);
+  line-height: 14px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.form_txtInput .checkbox_wrap input[type='checkbox'] + label:before {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #c2c2c2;
+  background: #fff;
+  text-align: center;
+  content: '';
+}
+
+.form_txtInput .checkbox_wrap input[type='checkbox'] + label:active:before,
+.checkbox_wrap input[type='checkbox']:checked + label:active:before {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.form_txtInput .checkbox_wrap input[type='checkbox']:checked + label:before {
+  border-color: #ddd;
+  background: #fff;
+}
+
+.form_txtInput .checkbox_wrap input[type='checkbox']:checked + label:after {
+  position: absolute;
+  top: 0px;
+  left: 2px;
+  width: 7px;
+  height: 7px;
+  font-size: 13px;
+  font-weight: bold;
+  color: rgba(51, 51, 51, 0.8);
+  content: '✓';
+}
+
+.star {
+  display: block;
+  margin: 0 0 45px 20px;
+  color: rgba(51, 51, 51, 0.8);
+}
+
+.star span {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px 0 0;
+  text-indent: 10px;
+}
+
+.star span:after {
+  position: absolute;
+  top: 0;
+  left: -10px;
+  font-size: 16px;
+  color: #625b3a;
+  content: '*';
+}
+
+.join_form {
+  width: 100%;
+}
+
+.join_form table {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border-spacing: 0;
+  border: 0;
+}
+
+.join_form table input {
+  float: left;
+  width: 100%;
+  height: 55px;
+  padding: 10px;
+  border: 1px solid rgba(51, 51, 51, 0.2);
+  background-color: transparent;
+  font-size: 14px;
+  color: #4c4c4c;
+  box-sizing: border-box;
+}
+
+.join_form table input.my_number {
+  display: inline-block;
+  width: 60%;
+}
+
+.join_form table input.my_number2 {
+  width: 80px;
+  margin-left: 5px;
+}
+
+.join_form table input.my_number3 {
+  width: 80px;
+  margin-left: 5px;
+}
+
+.join_form table input.my_adress {
+  width: 150px;
+}
+
+.join_form table input.my_adress2 {
+  width: 130px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+.join_form table input.my_detailAdress {
+  margin-bottom: 5px;
+}
+
+.join_form table input.email {
+  display: inline-block;
+}
+
+.join_form table input.email2 {
+  width: 150px;
+  margin-left: 5px;
+}
+
+.join_form.idpwFind table input {
+  width: 519px;
+}
+
+.join_form.idpwFind table input.email {
+  width: 223px;
+}
+
+.join_form.idpwFind table input.email2 {
+  width: 263px;
+}
+
+.join_form.idpwFind table input.phone {
+  width: 182px;
+  margin: 0 12px 0 11px;
+}
+
+.join_form.idpwFind table input.phone2 {
+  width: 182px;
+}
+
+.join_form table input.send_number {
+  width: 30%;
+}
+
+.join_form table th span {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px 0 0;
+}
+
+.join_form table th span:after {
+  position: absolute;
+  top: 0;
+  right: 0px;
+  font-size: 13px;
+  color: #625b3a;
+  content: '*';
+}
+
+.join_form table th,
+td,
+tr {
+  vertical-align: top;
+}
+
+.join_form table th {
+  padding-top: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.join_form table td {
+  position: relative;
+  padding: 6px 0;
+}
+
+.join_form.idpwFind table th span:after {
+  content: none;
+}
+
+.join_form table td a.btn_confirm {
+  display: inline-block;
+  width: 130px;
+  height: 55px;
+  margin-left: 10px;
+  background: rgba(203, 198, 173, 0.3);
+  font-size: 13px;
+  line-height: 56px;
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+.join_form table td a.btn_confirm:hover {
+  background: rgba(159, 151, 95, 0.3);
+}
+
+.join_form table td input.btn_findPost {
+  display: inline-block;
+  width: 130px;
+  height: 55px;
+  margin-left: 10px;
+  border: none;
+  background: rgba(203, 198, 173, 0.3);
+  font-size: 13px;
+  color: #333;
+  text-align: center;
+  vertical-align: top;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+.join_form table td input.btn_findPost:hover {
+  background: rgba(159, 151, 95, 0.3);
+}
+
+.join_form table td a.btn_confirm.send {
+  border: 1px solid rgba(203, 198, 173, 0.3);
+  background: transparent;
+  background-color: rgba(203, 198, 173, 0.3);
+  transition: all 0.3s;
+}
+
+.join_form table td a.btn_confirm.send:hover {
+  background: rgba(159, 151, 95, 0.3);
+}
+
+.join_form.idpwFind table td select {
+  float: left;
+  width: 124px;
+  height: 50px;
+  border: 1px solid #ececec;
+  background: url(https://secsales.interparkb2b.co.kr/data/G94/main/sele_arr.gif) no-repeat 95% 50%;
+  font-size: 14px;
+  color: #ccc;
+  text-indent: 20px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.join_form.idpwFind table td select::-ms-expand {
+  display: none;
+}
+
+.join_form.idpwFind table td tr.phone td select {
+  text-align: center;
+  text-indent: 10px;
+}
+
+.join_form.idpwFind table tr.email input:after,
+.mar10:after,
+.join_form.idpwFind table td select:after,
+.join_form table td a.btn_confirm:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.agree_wrap {
+  margin: 50px 0 50px;
+  box-sizing: border-box;
+}
+
+.agree_wrap .checkbox_wrap {
+  text-align: left;
+}
+
+::placeholder {
+  color: rgba(51, 51, 51, 0.4);
+}
+
+:-ms-input-placeholder {
+  color: #c4c4c4 !important;
+}
+
+::-ms-input-placeholder {
+  color: #c4c4c4 !important;
+}
+
+.mar10 {
+  display: inline-block;
+  float: left;
+  margin: 14px 5px 0 10px;
+  padding: 0;
+}
+
+.explan_txt {
+  margin: 3px 0 0 22px;
+}
+
+.explan_txt li {
+  font-size: 13px;
+  color: rgba(51, 51, 51, 0.3);
+  line-height: 17px;
+}
+
+.popWrap {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  z-index: 5;
+  width: 100%;
+  max-width: 400px;
+  margin: 30px auto 0;
+  padding: 30px;
+  border: 1px solid #ececec;
+  background: #fff;
+  transform: translateX(-50%);
+}
+
+.popWrap.is-open {
+  display: block;
+}
+
+.popWrap .pop_txt_con .pop_exTxt {
+  font-size: 14px;
+  color: #9a9a9a;
+  line-height: 20px;
+}
+
+.popWrap .pop_txt_con .pop_exTxt span {
+  color: #254ee9;
+}
+
+.popWrap .pop_btnWrap {
+  margin: 30px 0 0;
+}
+
+.popWrap .pop_btnWrap a {
+  display: block;
+  width: 103px;
+  height: 22px;
+  padding: 10px;
+  background-color: #4380ce;
+  font-weight: bold;
+  color: #fff;
+  line-height: 22px;
+  text-align: center;
+}
+
+.join_form table input.send_number::placeholder {
+  text-align: right;
+}
+
+.join_form table input.send_number:-ms-input-placeholder {
+  text-align: right;
+}
+
+.join_form table input.send_number::-ms-input-placeholder {
+  text-align: right;
+}
+
+.overlayer {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.overlayer.is-open {
+  display: block;
+}
+
+.background__bori img {
+  display: block;
+  position: absolute;
+  right: 200px;
+  bottom: -550px;
+  width: 15%;
+  opacity: 0.3;
+}
+
+/* 수정영역 */
+th {
+}
+
+tr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+td {
+  width: 70%;
+}
+
+@media (max-width: 768px) {
+  .form_txtInput {
+    padding: 0 30px;
+    box-sizing: border-box;
+  }
+
+  .join_form table input {
+    float: left;
+    width: 100%;
+    height: 35px;
+    padding: 10px;
+    background-color: transparent;
+    font-size: 13px;
+    color: #4c4c4c;
+    box-sizing: border-box;
+  }
+
+  .mar10 {
+    display: inline-block;
+    float: left;
+    margin: 14px 5px 0 10px;
+    padding: 0;
+  }
+
+  .join_form table td a.btn_confirm.send {
+    width: 100px;
+    height: 35px;
+    border: 1px solid rgba(203, 198, 173, 0.3);
+    line-height: 35px;
+  }
+
+  .join_form table td a.btn_confirm {
+    display: inline-block;
+    width: 130px;
+    height: 35px;
+    margin-left: 10px;
+    background: rgba(203, 198, 173, 0.3);
+    font-size: 13px;
+    line-height: 35px;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+  .join_form table td input.btn_findPost {
+    display: inline-block;
+    width: 130px;
+    height: 35px;
+    margin-left: 10px;
+    border: none;
+    background: rgba(203, 198, 173, 0.3);
+    font-size: 13px;
+    color: #333;
+    text-align: center;
+    vertical-align: top;
+    box-sizing: border-box;
+  }
+
+  .background__bori img {
+    right: 50px;
+    bottom: -350px;
   }
 }
