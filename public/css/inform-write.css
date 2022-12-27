@@ -76,9 +76,8 @@
   border: none;
 }
 
-.bt-wrap > input {
-  width: 7%;
-  padding: 13px 0;
+.write-wrap .bt-wrap > input {
+  padding: 13px;
 }
 
 @media screen and (max-width: 1200px) {
