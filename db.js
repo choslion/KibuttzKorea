@@ -141,6 +141,13 @@ function deleteProductById(id, callback) {
   });
 }
 
+function getMainMemo(callback) {
+  connection.query('SELECT * FROM kibuttztable ORDER BY id DESC', (err, rows, fields) => {
+    if (err) throw err;
+    callback(rows);
+  });
+}
+
 module.exports = {
   insertLogin,
   checkLogin,
@@ -158,4 +165,5 @@ module.exports = {
   getProductById,
   deleteProduct,
   deleteProductById,
+  getMainMemo,
 };

@@ -20,8 +20,11 @@ const upload = multer({
 });
 
 router.get('/', (req, res) => {
-  res.render('index', { darkMode: false });
+  db.getMainMemo((rows) => {
+    res.render('index', { rows: rows, darkMode: false });
+  });
 });
+
 router.get('/join', (req, res) => {
   res.render('join', { darkMode: true });
 });

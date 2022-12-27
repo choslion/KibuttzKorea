@@ -346,23 +346,25 @@
           </h2>
         </li>
         <li class="board-list">
+          <% for(let i = 0; i < 1; i++) { %>
           <div class="board-wrap">
             <div class="board-list__author">
-              <a href="">
+              <a href="content?id=<%= rows[i].id %>">
                 <span>키부츠코리아</span>
               </a>
             </div>
             <div class="board-list__title">
-              <a href="">
-                <span>비대면으로 업무를 다시 시작합니다!!</span>
+              <a href="content?id=<%= rows[i].id %>">
+                <span><%= rows[i].title %></span>
               </a>
             </div>
             <div class="board-list__date">
-              <a href="">
-                <span>2022.07.27</span>
+              <a href="content?id=<%= rows[i].id %>">
+                <span><%= rows[i].create_time %></span>
               </a>
             </div>
           </div>
+          <% } %>
           <a href="/inform" class="view-more"> <span>VIEW MORE</span><i class="fa-solid fa-right-long"></i> </a>
         </li>
       </ul>
