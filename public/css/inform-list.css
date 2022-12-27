@@ -11,6 +11,10 @@
   height: 91px;
 }
 
+.inform-list .title {
+  padding: 60px 0;
+}
+
 .inform-head__list {
   text-align: center;
   color: #222222;
@@ -67,6 +71,13 @@
 }
 
 @media screen and (max-width: 1200px) {
+  .inform-wrap {
+    padding: 130px 0;
+  }
+
+  .inform-list .title {
+    padding: 30px 0;
+  }
 }
 
 @media screen and (max-width: 1000px) {
