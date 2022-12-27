@@ -6,8 +6,8 @@
       <div class="board-write">
         <div class="write-title">
           <textarea name="title" id="summernote" class="board-write__textarea" placeholder="제목을 입력해 주세요."><%= row.title %> </textarea>
-          <input type="text" placeholder="작성자" name="author" />
-          <input type="text" placeholder="날짜 ex) 2022-11-23" />
+          <input type="text" placeholder="작성자" name="author" value="<%= row.author %> " />
+          <!-- <input type="text" placeholder="날짜 ex) 2022-11-23" /> -->
         </div>
         <div class="cont">
           <textarea name="content" placeholder="내용 입력">
