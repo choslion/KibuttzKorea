@@ -1,47 +1,3 @@
-/* .form-wrap {
-  padding: 350px 0;
-}
-
-tbody {
-  border-radius: 10px;
-}
-td {
-  border-bottom: 1px solid rgb(77, 77, 77);
-  padding: 20px 0;
-}
-
-.submit > td {
-  border-bottom: none;
-}
-
-.form-wrap h1 {
-  text-align: center;
-  font-size: 40px;
-  border-bottom: 1px solid black;
-  padding-bottom: 50px;
-  color: #1c4d9a;
-}
-
-form {
-  padding-top: 20px;
-}
-
-label {
-  font-size: 16px;
-  padding: 10px;
-}
-
-td {
-  padding: 15px;
-}
-
-input {
-  align-content: center;
-  border-radius: 10px;
-  transition: all 0.2s ease-in-out;
-  padding: 5px;
-} */
-
 input::placeholder {
   color: rgb(125, 125, 177);
   padding: 10px;
@@ -50,12 +6,6 @@ input::placeholder {
 input:focus {
   border-bottom: 3px solid rgb(101, 101, 235);
 }
-
-/* table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .submit {
   text-align: center;
@@ -69,30 +19,6 @@ input[type='submit'] {
   padding: 10px;
 }
 
-/* @media screen and (max-width: 768px) {
-  .form-wrap {
-    padding: 150px 0;
-  }
-
-  td {
-    padding: 20px 0;
-  }
-
-  .form-wrap h1 {
-    font-size: 26px;
-
-    padding-bottom: 40px;
-  }
-
-  form {
-    padding-top: 20px;
-  }
-
-  label {
-    font-size: 13px;
-    padding: 10px;
-  }
-} */
 /* ////////////////////////////////////////// */
 
 .red_txt {
@@ -152,15 +78,15 @@ input[type='submit'] {
   margin: 0 auto;
   padding: 10px;
   border: none;
-  background-color: #cbc6ad;
+  background-color: #1c4d9a;
   line-height: 45px;
   text-align: center;
   transition: all 0.3s;
 }
-.joinComfirm_Btn:hover {
-  background-color: #a9a27d;
+/* .joinComfirm_Btn:hover {
+  background-color: #1c4d9a;
   color: #fff;
-}
+} */
 
 .btn_wrap a.wide {
   width: 587px;
@@ -170,7 +96,7 @@ input[type='submit'] {
 .find_txt ul li {
   margin: 0 0 20px;
   font-size: 13px;
-  color: #9a9a9a;
+  color: #1c4d9a;
   line-height: 17px;
   text-align: center;
 }
@@ -279,9 +205,8 @@ input[type='submit'] {
   height: 55px;
   padding: 10px;
   border: 1px solid rgba(51, 51, 51, 0.2);
-  background-color: transparent;
   font-size: 14px;
-  color: #4c4c4c;
+  color: #fff;
   box-sizing: border-box;
 }
 
@@ -391,7 +316,8 @@ tr {
   width: 130px;
   height: 55px;
   margin-left: 10px;
-  background: rgba(203, 198, 173, 0.3);
+  background: #1c4d9a;
+  color: #fff;
   font-size: 13px;
   line-height: 56px;
   text-align: center;
@@ -399,9 +325,9 @@ tr {
   box-sizing: border-box;
   transition: all 0.3s;
 }
-.join_form table td a.btn_confirm:hover {
+/* .join_form table td a.btn_confirm:hover {
   background: rgba(159, 151, 95, 0.3);
-}
+} */
 
 .join_form table td input.btn_findPost {
   display: inline-block;
@@ -409,29 +335,28 @@ tr {
   height: 55px;
   margin-left: 10px;
   border: none;
-  background: rgba(203, 198, 173, 0.3);
+  background: #1c4d9a;
   font-size: 13px;
-  color: #333;
+  color: #fff;
   text-align: center;
   vertical-align: top;
   box-sizing: border-box;
   transition: all 0.3s;
 }
 
-.join_form table td input.btn_findPost:hover {
+/* .join_form table td input.btn_findPost:hover {
   background: rgba(159, 151, 95, 0.3);
-}
+} */
 
 .join_form table td a.btn_confirm.send {
-  border: 1px solid rgba(203, 198, 173, 0.3);
-  background: transparent;
-  background-color: rgba(203, 198, 173, 0.3);
+  color: #fff;
+  background-color: #1c4d9a;
   transition: all 0.3s;
 }
 
-.join_form table td a.btn_confirm.send:hover {
+/* .join_form table td a.btn_confirm.send:hover {
   background: rgba(159, 151, 95, 0.3);
-}
+} */
 
 .join_form.idpwFind table td select {
   float: left;
@@ -578,18 +503,7 @@ tr {
   display: block;
 }
 
-.background__bori img {
-  display: block;
-  position: absolute;
-  right: 200px;
-  bottom: -550px;
-  width: 15%;
-  opacity: 0.3;
-}
-
 /* 수정영역 */
-th {
-}
 
 tr {
   display: flex;
@@ -625,10 +539,15 @@ td {
     padding: 0;
   }
 
+  .join_form table th {
+    padding-top: 5px;
+    font-size: 12px;
+  }
+
   .join_form table td a.btn_confirm.send {
     width: 100px;
     height: 35px;
-    border: 1px solid rgba(203, 198, 173, 0.3);
+    border: 1px solid #1c4d9a;
     line-height: 35px;
   }
 
@@ -637,7 +556,7 @@ td {
     width: 130px;
     height: 35px;
     margin-left: 10px;
-    background: rgba(203, 198, 173, 0.3);
+    background: #1c4d9a;
     font-size: 13px;
     line-height: 35px;
     text-align: center;
@@ -651,9 +570,9 @@ td {
     height: 35px;
     margin-left: 10px;
     border: none;
-    background: rgba(203, 198, 173, 0.3);
+    background: #1c4d9a;
     font-size: 13px;
-    color: #333;
+    color: #fff;
     text-align: center;
     vertical-align: top;
     box-sizing: border-box;
