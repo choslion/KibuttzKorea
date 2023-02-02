@@ -97,14 +97,14 @@ function countNum(id, callback) {
 }
 
 function getProduct(callback) {
-  connection.query('SELECT * FROM productTable ORDER BY id DESC', (err, rows, fields) => {
+  connection.query('SELECT * FROM producttable ORDER BY id DESC', (err, rows, fields) => {
     if (err) throw err;
     callback(rows);
   });
 }
 
 function insertProduct(img, productName, productPrice, productDetail, callback) {
-  connection.query(`INSERT INTO productTable(create_time,img,productName,productPrice,productDetail) VALUE(NOW(),'${img}','${productName}','${productPrice}','${productDetail}')`, (err) => {
+  connection.query(`INSERT INTO producttable(create_time,img,productName,productPrice,productDetail) VALUE(NOW(),'${img}','${productName}','${productPrice}','${productDetail}')`, (err) => {
     if (err) throw err;
     callback();
   });
@@ -112,7 +112,7 @@ function insertProduct(img, productName, productPrice, productDetail, callback) 
 
 function updateProduct(setId, img, productName, productPrice, productDetail, callback) {
   connection.query(
-    `UPDATE productTable SET create_time = NOW() , img = '${img}' , productName = '${productName}' , productPrice = '${productPrice}' , productDetail = '${productDetail}' WHERE id = ${setId}`,
+    `UPDATE producttable SET create_time = NOW() , img = '${img}' , productName = '${productName}' , productPrice = '${productPrice}' , productDetail = '${productDetail}' WHERE id = ${setId}`,
     (err) => {
       if (err) throw err;
       callback();
@@ -121,21 +121,21 @@ function updateProduct(setId, img, productName, productPrice, productDetail, cal
 }
 
 function getProductById(id, callback) {
-  connection.query(`SELECT * FROM productTable WHERE id = ${id}`, (err, row) => {
+  connection.query(`SELECT * FROM producttable WHERE id = ${id}`, (err, row) => {
     if (err) throw err;
     callback(row);
   });
 }
 
 function deleteProduct(id, callback) {
-  connection.query(`DELETE FROM productTable WHERE id = ${id}`, (err) => {
+  connection.query(`DELETE FROM producttable WHERE id = ${id}`, (err) => {
     if (err) throw err;
     callback();
   });
 }
 
 function deleteProductById(id, callback) {
-  connection.query(`DELETE FROM productTable WHERE id = ${id}`, (err) => {
+  connection.query(`DELETE FROM producttable WHERE id = ${id}`, (err) => {
     if (err) throw err;
     callback();
   });
