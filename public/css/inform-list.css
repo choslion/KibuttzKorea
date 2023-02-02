@@ -84,4 +84,27 @@
 }
 
 @media screen and (max-width: 768px) {
+  .inform-head {
+    height: 71px;
+  }
+  .inform-head__list {
+    font-size: 13px;
+  }
+
+  .inform-body {
+    height: 81px;
+    font-size: 12px;
+  }
+
+  .w10 {
+    width: 20%;
+  }
+
+  .w55 {
+    width: 55%;
+  }
+
+  .w15 {
+    width: 25%;
+  }
 }
