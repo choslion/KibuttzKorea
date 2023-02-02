@@ -42,7 +42,7 @@ input[type='submit'] {
 }
 
 .p200 {
-  padding: 200px 0 200px;
+  padding: 200px 0 140px;
   box-sizing: border-box;
 }
 
@@ -206,7 +206,6 @@ input[type='submit'] {
   padding: 10px;
   border: 1px solid rgba(51, 51, 51, 0.2);
   font-size: 14px;
-  color: #fff;
   box-sizing: border-box;
 }
 
